@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <title>TodoApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="title"> TODO</span>
+        <img src="./assets/images/plusbtn.png" onclick="toggleModal()" />
+      </div>
+      <ul id="todoItems" class="todo-body">
+        
+      </ul>
+      <div id="todoFormModal" class="modal">
+        <div id="modalBody" class="modal-body">
+          <form id="todoForm">
+            <input id="id" hidden />
+            <input
+              name="title"
+              class="form-control input"
+              placeholder="Tittle"
+            />
+            <textarea
+              name="desc"
+              class="form-control textarea"
+              placeholder="Description"
+            ></textarea>
+            <button class="save-btn" type="button" onclick="addTodo()">
+              <img src="assets/images/checked.png" />Create
+            </button>
+          </form>
+        </div>
+          
+        </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
